@@ -1,0 +1,9 @@
+1. Install the mlflow api gateway:
+    pip install 'mlflow[gateway]'
+
+2. create a config.yaml file with the routes for the service
+
+3. start the api gateway by running the command:
+    mlflow gateway start --config-path <config_file_absolute_path>
+
+4. the local server is available at 127.0.0.1:5000

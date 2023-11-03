@@ -1,0 +1,40 @@
+routes:
+  - name: my_completions_route
+    route_type: llm/v1/completions
+    model:
+      provider: openai
+      name: gpt-3.5-turbo
+      config:
+        openai_api_key: $OPENAI_API_KEY
+
+  - name: my_completions_route_gpt4
+    route_type: llm/v1/completions
+    model:
+      provider: openai
+      name: gpt-4
+      config:
+        openai_api_key: $OPENAI_API_KEY
+
+  - name: my_chat_route_gpt_4
+    route_type: llm/v1/chat
+    model:
+      provider: openai
+      name: gpt-4
+      config:
+        openai_api_key: $OPENAI_API_KEY
+
+  - name: my_chat_route_gpt_3.5_turbo
+    route_type: llm/v1/chat
+    model:
+      provider: openai
+      name: gpt-3.5-turbo
+      config:
+        openai_api_key: $OPENAI_API_KEY
+
+  - name: my_embeddings_route
+    route_type: llm/v1/embeddings
+    model:
+      provider: openai
+      name: text-embedding-ada-002
+      config:
+        openai_api_key: $OPENAI_API_KEY
